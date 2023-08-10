@@ -43,7 +43,7 @@ jobs:
               const response = await github.rest.repos.createRelease({
                 draft: false,
                 generate_release_notes: true,
-                body: 'For Cal.com release details, see: https://github.com/calcom/cal.com/releases/tag/${{ inputs.RELEASE_TAG }}',
+                body: 'For Cal.com release details, see: https://github.com/adanzweig/cal/releases/tag/${{ inputs.RELEASE_TAG }}',
                 name: '${{ inputs.RELEASE_TAG }}',
                 target_commitish: 'release-${{ inputs.RELEASE_TAG }}',
                 owner: context.repo.owner,
